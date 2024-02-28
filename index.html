@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    
+
+    <title>Baharudin Belakolly</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="toggle">
+        <a href="#">
+          <ion-icon name="menu-outline"></ion-icon>
+        </a>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="section1">
+          <div class="head-img">
+            <img
+              src="./img/profile.png"
+              alt=""
+            />
+          </div>
+          <div class="img-article">
+            <h1>Halo, Saya Baharudin Bela kolly</h1>
+            <p class="about">
+             saya adalah seorang mahasiswa yang penuh semangat dan berjiwa petualang. Anda memiliki kecenderungan untuk mencari tantangan dalam kehidupan, baik di dalam maupun di luar kelas. Semangat Anda untuk belajar hal-hal baru membawa Anda ke berbagai bidang pengetahuan, dari ilmu pengetahuan hingga seni.
+            <a href="#" class="down"><button>Project ➡️</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section2">
+      <div class="container">
+        <div class="section-p">
+          <p class="r-p">PROJECTS</p>
+          <p class="v-p"><a href="">View All</a></p>
+        </div>
+        <div class="recent-posts">
+          
+        
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="container">
+        <div class="c-p">
+          <p>project AI</p>
+        </div>
+        <div class="f-w-item">
+          <div class="f-w-img">
+            <img src="./img/project-1.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="c-p">
+          <p>project Robotik</p>
+        </div>
+        <div class="f-w-item">
+          <div class="f-w-img">
+            <img src="./img/project-2.jpeg" alt="" />
+          </div>
+        </div>
+       
+    </section>
+    <footer>
+      <div class="social-buttons">
+        <a href="#"><img src="/img/fb.svg" alt="" />
+        </a>
+        <a href="#"><img src="/img/insta.svg" alt="" />
+        </a>
+        <a href="#"><img src="/img/twitter.svg" alt="" />
+        </a>
+        <a href="#"><img src="/img/linkedin.svg" alt="" />
+        </a>
+      </div>
+      <p>Copyright © 20224All rights reserved <br><br> <b> ©Baharudin bela kolly </b></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".nav-links").hasClass("active")) {
+            $(".nav-links").removeClass("active");
+            $(this).find("a").html('<ion-icon name="menu-outline"></ion-icon>');
+          } else {
+            $(".nav-links").addClass("active");
+            $(this)
+              .find("a")
+              .html('<ion-icon name="close-outline"></ion-icon>');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
